@@ -42,8 +42,8 @@ int bittoDEC(int i)
     while(i!=0)
     {
         reminder=i%10;
-        i=i/10;
         result +=reminder*pow(2, j);
+        i/=10;
         j++;
     }
     return result;
